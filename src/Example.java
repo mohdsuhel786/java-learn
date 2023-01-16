@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Example {
-    // new Student
+    // new Student block !!
     //Hello Fuck you!
 //    static List<Student> students = new ArrayList<>(); // 10
 //
