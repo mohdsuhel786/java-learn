@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HashMapDemo",
+            "request": "launch",
+            "mainClass": "HashMapDemo.HashMapDemo",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
+            "name": "UserInput",
+            "request": "launch",
+            "mainClass": "BasicDemo.BasicLearning.UserInput",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
+            "name": "BinaryTreeDemo",
+            "request": "launch",
+            "mainClass": "BinaryTreeDemo",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
+            "name": "BinaryTreeDemo",
+            "request": "launch",
+            "mainClass": "DataStructureCode.BinaryTreeDemo.BinaryTreeDemo",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
+            "name": "RemoveWhiteSpace",
+            "request": "launch",
+            "mainClass": "RemoveWhiteSpace",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
             "name": "Current File",
             "request": "launch",
             "mainClass": "${file}"
