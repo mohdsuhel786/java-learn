@@ -200,6 +200,7 @@ public class LinkedListDemo {
        // ll.deleteAtIndex(0);
         ll.printLinkedList();
 
+
         }
 
 }
