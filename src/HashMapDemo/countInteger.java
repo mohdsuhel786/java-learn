@@ -3,6 +3,22 @@ import java.util.*;
 
 class countInteger {
 
+    public static void frequencyCount(int arr[], int N, int P)
+    {
+        // code here
+        Map<Integer, Integer> occurrences = new HashMap<>();
+        for (int i=0;i<N;i++) {
+            occurrences.put(arr[i], occurrences.getOrDefault(arr[i], 0) + 1);
+        }
+
+        for(int i=0;i<N;i++){
+
+            arr[i] = occurrences.getOrDefault(i+1,0);
+        }
+
+
+    }
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 

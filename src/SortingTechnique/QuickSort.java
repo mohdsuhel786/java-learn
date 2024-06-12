@@ -45,7 +45,7 @@ class SolutionQuick {
 public class QuickSort {
     public static void main(String args[]) {
         List<Integer> arr = new ArrayList<>();
-        arr = Arrays.asList(new Integer[] {4, 6, 2, 5, 7, 9, 1, 3});
+        arr = Arrays.asList(new Integer[] {24, 18, 38, 43, 14 ,40, 1, 54});
         int n = arr.size();
         System.out.println("Before Using insertion Sort: ");
         for (int i = 0; i < n; i++) {

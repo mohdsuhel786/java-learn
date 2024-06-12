@@ -37,6 +37,7 @@ public class RoughWork {
         System.out.println(num1 == num2);//1
         Integer num3 = 20, num4 = 20;
         System.out.println(num3 == num4);//2
+        Math.log10(2);
 
     }
 }

@@ -25,7 +25,7 @@ class HashMapDemo{
             }
 
         }
-        System.out.println(map);
+
 
         System.out.println(map.entrySet().stream().max((v1,v2) -> v1.getValue().compareTo(v2.getValue())).get().getKey());
     }

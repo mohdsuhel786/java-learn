@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "DuplicateValue",
+            "request": "launch",
+            "mainClass": "StreamsApi.DuplicateValue",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
             "name": "HashMapDemo",
             "request": "launch",
             "mainClass": "HashMapDemo.HashMapDemo",
