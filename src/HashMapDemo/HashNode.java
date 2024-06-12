@@ -84,7 +84,7 @@ class HashMap<K, V>{
     }
     public static void main(String[] args) {
 
-        HashMap<String, String> hashMap = new HashMap<>();
+        HashMap<String, String> hashMap = new HashMap<String, String>() ;
         hashMap.put("key1", "value1");
         hashMap.put("key2", "value2");
         hashMap.put("key3", "value2");

@@ -6,7 +6,7 @@ class countInteger {
     public static void frequencyCount(int arr[], int N, int P)
     {
         // code here
-        Map<Integer, Integer> occurrences = new HashMap<>();
+        Map<Integer, Integer> occurrences = (Map<Integer, Integer>) new HashMap<>();
         for (int i=0;i<N;i++) {
             occurrences.put(arr[i], occurrences.getOrDefault(arr[i], 0) + 1);
         }
