@@ -4,7 +4,7 @@ public class LinkedListDemo {
 
     Node head;
 
-    class Node{
+    static class Node{
         int val;
         Node next = null;
         Node(int val){
@@ -14,7 +14,7 @@ public class LinkedListDemo {
     }
 
 
-    public void addFirt(int val){
+    public void addFirst(int val){
         Node newNode = new Node(val);
         if(head == null){
             head = newNode;
@@ -186,10 +186,10 @@ public class LinkedListDemo {
 
     public static void main(String[] args) {
         LinkedListDemo ll = new LinkedListDemo();
-        ll.addFirt(2);
-        ll.addFirt(1);
+        ll.addFirst(2);
+        ll.addFirst(1);
         ll.addLast(4);
-        ll.addFirt(0);
+        ll.addFirst(0);
         ll.addLast(5);
 
         ll.printLinkedList();
