@@ -6,6 +6,104 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PizzaOrder",
+            "request": "launch",
+            "mainClass": "DesignPattern.DecoratorDesign.PizzaOrder",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
+            "name": "Store",
+            "request": "launch",
+            "mainClass": "DesignPattern.ObserverDesign.Store",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
+            "name": "MountainArrayTarget",
+            "request": "launch",
+            "mainClass": "DataStructureCode.BinarySearchDemo.MountainArrayTarget",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
+            "name": "PeekMountain",
+            "request": "launch",
+            "mainClass": "DataStructureCode.BinarySearchDemo.PeekMountain",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
+            "name": "LowestAndSmallest",
+            "request": "launch",
+            "mainClass": "DataStructureCode.BinarySearchDemo.LowestAndSmallest",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
+            "name": "CountPairs",
+            "request": "launch",
+            "mainClass": "DataStructureCode.ArrayDemo.CountPairs",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
+            "name": "TwoSum",
+            "request": "launch",
+            "mainClass": "DataStructureCode.ArrayDemo.TwoSum",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
+            "name": "ArrayIsSorted",
+            "request": "launch",
+            "mainClass": "DataStructureCode.ArrayDemo.ArrayIsSorted",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
+            "name": "HashMap",
+            "request": "launch",
+            "mainClass": "HashMapDemo.HashMap",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
+            "name": "Example",
+            "request": "launch",
+            "mainClass": "RoughDemo.Example",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
+            "mainClass": "HashMapDemo.Main",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
+            "name": "Demo1",
+            "request": "launch",
+            "mainClass": "BasicDemo.Demo1",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
+            "name": "Emp",
+            "request": "launch",
+            "mainClass": "BasicDemo.Emp",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
+            "name": "FactorialDemo1",
+            "request": "launch",
+            "mainClass": "RoughDemo.BasicMathProblem.FactorialDemo1",
+            "projectName": "java-learn_bc313099"
+        },
+        {
+            "type": "java",
             "name": "MyThread",
             "request": "launch",
             "mainClass": "MultithreadingDemo.MyThread",

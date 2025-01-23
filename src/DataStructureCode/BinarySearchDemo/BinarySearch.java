@@ -1,4 +1,4 @@
-package DataStructureCode.BinaryTreeDemo;
+package DataStructureCode.BinarySearchDemo;
 
 
 public class BinarySearch {
@@ -27,7 +27,8 @@ public class BinarySearch {
       }
       else {
           System.out.println("Not present");
-      }char c ='a' ;
+      }
+      char c ='a' ;
       c++;
         System.out.println(c);
 

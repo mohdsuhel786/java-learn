@@ -57,7 +57,7 @@ public class StreamApiDemo1 {
         // find max and min
         Integer max = list.stream().max(Comparator.comparing(Integer::valueOf)).get();
         System.out.println(max);
-        Integer min = list.stream().min(Comparator.comparing(i -> Integer.valueOf(i))).get();
+        Integer min = list.stream().min(Comparator.comparing(Integer::valueOf)).get();
         System.out.println(min);
 
         //sort numbers

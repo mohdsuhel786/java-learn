@@ -1,4 +1,8 @@
 {
     "java.debug.settings.onBuildFailureProceed": true,
-    "jdk.advanced.disable.nbjavac": false
+    "jdk.advanced.disable.nbjavac": false,
+    "java.project.sourcePaths": [
+        "src"
+    ],
+    "java.project.referencedLibraries": []
 }
