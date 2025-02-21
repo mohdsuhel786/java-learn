@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 public class EmployeeDemo {
     private int id;
@@ -79,7 +80,13 @@ public class EmployeeDemo {
 //        System.out.println(list);
 //        Optional<EmployeeDemo> optional = list.stream().sorted(Comparator.comparingInt(EmployeeDemo::getSalary).reversed()).skip(2).findFirst();
 //        System.out.println(optional.get().name);
- long empCount =  list.stream().filter(emp -> emp.gender.equals("Female")).count();
+        long empCount = list.stream().filter(emp -> emp.gender.equals("Female")).count();
         System.out.println(empCount);
+
+
+        list.stream().filter(e -> e.getSalary() > 20000).map(e -> e.name).collect(Collectors.toSet()).forEach(System.out::println);
+        // System.out.println(count);
+
+
     }
 }

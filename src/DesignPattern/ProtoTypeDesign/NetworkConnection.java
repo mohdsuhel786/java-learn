@@ -35,7 +35,7 @@ public class NetworkConnection implements Cloneable{
 
     @Override
     public String toString() {
-        return "NetworkConnection{" +
+        return "NetworkConnection {" +
                 "ip='" + this.ip + '\'' +
                 ", importantData='" + this.importantData + '\'' + " : " + domains +
                 '}';

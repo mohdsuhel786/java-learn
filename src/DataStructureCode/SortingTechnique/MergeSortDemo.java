@@ -53,16 +53,11 @@ public class MergeSortDemo {
 
         int arr[] = { 14, 2, 7, 6, 3, 1, 5,8 };
         int n = arr.length;
-        System.out.println("Before sorting array: " );
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
-        }
+        System.out.println("Before sorting array: " + Arrays.toString(arr));
+
         System.out.println();
         Solution.mergeSort(arr, 0, n - 1);
-        System.out.println("After sorting array: ");
-        for (int i = 0; i < n; i++) {
-            System.out.print(arr[i] + " ");
-        }
+        System.out.println("After sorting array: " + Arrays.toString(arr));
         System.out.println();
     }
 
