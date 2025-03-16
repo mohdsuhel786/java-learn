@@ -24,33 +24,54 @@ public class Anagram
 
 //        Set<Set<String>> groupedAnagrams = groupAnagrams(words);
 //        System.out.println(groupedAnagrams);
-        groupAnagrams(words);
+        System.out.println(groupAnagrams(words));
     }
 
-    public static void groupAnagrams(List<String> words)
-    {
-        HashMap<String, Set<String>> anagramMap = new HashMap<>();
 
-        for (String word : words)
+    public static List<List<String>> groupAnagrams(List<String> strs)
+    {
+        Map<String, List<String>> anagramMap = new HashMap<>();
+
+        for (String word : strs)
         {
             // Sort characters in the word to form a key
             char[] chars = word.toCharArray();
             Arrays.sort(chars);
 
-            String sortedWord = new String(chars);
+            String sortedWord = Arrays.toString(chars);
             // Add word to corresponding anagram set
-            anagramMap.computeIfAbsent(sortedWord, k -> new HashSet<>()).add(word);
+            anagramMap.computeIfAbsent(sortedWord, k -> new ArrayList<>()).add(word);
 
         }
-//        Set<String> strings = anagramMap.keySet();
-//        System.out.println(strings);
-        System.out.println(anagramMap.values());
 
-//        for(Map.Entry<String, Set<String>> entry : anagramMap.entrySet()){
-//            System.out.println(entry.getKey());
-//            System.out.println(entry.getValue());
-//        }
+        // Convert values to a set of sets
+        return new ArrayList<>(anagramMap.values());
     }
+
+//    public static void groupAnagrams(List<String> words)
+//    {
+//        HashMap<String, Set<String>> anagramMap = new HashMap<>();
+//
+//        for (String word : words)
+//        {
+//            // Sort characters in the word to form a key
+//            char[] chars = word.toCharArray();
+//            Arrays.sort(chars);
+//
+//            String sortedWord = new String(chars);
+//            // Add word to corresponding anagram set
+//            anagramMap.computeIfAbsent(sortedWord, k -> new HashSet<>()).add(word);
+//
+//        }
+////        Set<String> strings = anagramMap.keySet();
+////        System.out.println(strings);
+//        System.out.println(anagramMap.values());
+//
+////        for(Map.Entry<String, Set<String>> entry : anagramMap.entrySet()){
+////            System.out.println(entry.getKey());
+////            System.out.println(entry.getValue());
+////        }
+//    }
 
 
 //    public static Set<Set<String>> groupAnagrams(List<String> words) {
@@ -70,4 +91,6 @@ public class Anagram
 //        // Convert values to a set of sets
 //        return new HashSet<>(anagramMap.values());
 //    }
+
+
 }

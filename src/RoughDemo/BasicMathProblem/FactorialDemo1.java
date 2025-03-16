@@ -1,28 +1,32 @@
+package RoughDemo.BasicMathProblem;
 
 import java.util.ArrayList;
+import java.util.List;
 
 public class FactorialDemo1 {
 
-    public static ArrayList<Long> fact(Long n){
-        ArrayList<Long> list = new ArrayList<>();
-        Long a = 1L;
-        Long b = 2L;
-        Long c= a * b;
-        
-        if(n>=2 ){
-            list.add(a);
+    public static void fact(Long n, Long factorial, List<Long> list)
+    {
+        if (n == 0 || n == 1)
+        {
+            list.add(1L);
+            return;
         }
 
-        return list;
+        factorial *= n;
+        fact(n - 1, factorial, list);
+        list.add(factorial); // Add after recursive call to maintain order
     }
 
     public static void main(String[] args) {
-        Long n = 3L;
-       ArrayList<Long> l =  fact(n);
-       for(Long i: l){
-        System.out.println(i);
-       }
+        Long n = 10L;
+        List<Long> list = new ArrayList<>();
 
+        fact(n, 1L, list);
+
+        for (Long value : list)
+        {
+            System.out.println(value);
+        }
     }
-
 }

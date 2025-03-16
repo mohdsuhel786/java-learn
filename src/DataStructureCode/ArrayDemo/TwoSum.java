@@ -19,7 +19,7 @@ public class TwoSum {
 
     public static int[] twoSumMap(int n, int []arr, int target) {
         int[] ans = new int[2];
-        ans[0] = ans[1] = -1;
+        ans[0] = ans[1] = Integer.MIN_VALUE;
         HashMap<Integer, Integer> mpp = new HashMap<>();
         for (int i = 0; i < n; i++) {
             int num = arr[i];
@@ -39,8 +39,10 @@ public class TwoSum {
         int n = 5;
         int[] arr = {2, 6, 5, 8, 11};
         int target = 14;
-        String ans = twoSum(n, arr, target);
-        System.out.println("This is the answer for variant 1: " + ans);
+        //    String ans = twoSum(n, arr, target);
+
+        int[] ans = twoSumMap(n, arr, target);
+        System.out.println("This is the answer for variant 1: " + Arrays.toString(ans));
 
 
     }

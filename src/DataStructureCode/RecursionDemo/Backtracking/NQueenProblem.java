@@ -1,22 +1,30 @@
 package DataStructureCode.RecursionDemo.Backtracking;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
+
 public class NQueenProblem
 {
 
     public static void main(String[] args)
     {
-        int n = 5;
+        int n = 4;
         boolean[][] board = new boolean[n][n];
-        System.out.println(nQueen(board, 0));
+        List<List<String>> result = new ArrayList<>();
+        System.out.println(nQueen(result, board, 0));
+        System.out.println(result);
     }
 
-    static int nQueen(boolean[][] board, int row)
+    static int nQueen(List<List<String>> result, boolean[][] board, int row)
     {
         if (board.length == row)
         {
 
-            display(board);
-            System.out.println();
+//            display(board);
+//            System.out.println();
+            // System.out.println(displayBoard(board));
+            result.add(displayBoard(board));
             return 1;
         }
         int count = 0;
@@ -25,7 +33,7 @@ public class NQueenProblem
             if (isSafe(board, row, col))
             {
                 board[row][col] = true;
-                count += nQueen(board, row + 1);
+                count += nQueen(result, board, row + 1);
                 board[row][col] = false;
             }
         }
@@ -63,6 +71,35 @@ public class NQueenProblem
         return true;
     }
 
+    private static List<String> displayBoard(boolean[][] board)
+    {
+        List<String> list = new ArrayList<>();
+
+        for (boolean[] r : board)
+        {
+
+            StringBuilder rowStr = new StringBuilder();
+            for (boolean c : r)
+            {
+                if (c)
+                {
+                    //list.add("Q");
+                    rowStr.append("Q");
+
+                } else
+                {
+                    // list.add(".");
+                    rowStr.append(".");
+                }
+
+            }
+            // System.out.println();
+            list.add(rowStr.toString());
+
+        }
+        return list;
+    }
+
     private static void display(boolean[][] board)
     {
 
@@ -75,7 +112,7 @@ public class NQueenProblem
                     System.out.print("Q ");
                 } else
                 {
-                    System.out.print("X ");
+                    System.out.print(". ");
                 }
 
             }
