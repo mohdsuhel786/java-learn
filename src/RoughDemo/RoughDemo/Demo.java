@@ -11,59 +11,28 @@ public class Demo
         int[] nums = {0};
 
         int val = 1;
-        System.out.println(reverse("Am aem"));
+        System.out.println(longestSubSeq("   a "));
         // System.out.println( containsNearbyDuplicate( nums,val));
         // System.out.println(Arrays.toString(nums));
     }
 
-    public static char reverse(String str)
+    public static int longestSubSeq(String s)
     {
-        str = str.toLowerCase();
-        char[] chrArr = str.toCharArray();
-
-        Set<Character> set = new LinkedHashSet<>();
-        char result = '-';
-        for (int i = str.length() - 1; i >= 0; i--)
+        int maxlen = 0;
+        int l = 0;
+        HashSet<Character> set = new HashSet<>();
+        for (int r = 0; r < s.length(); r++)
         {
-
-            if (Character.isLetterOrDigit(chrArr[i]))
+            while (set.contains(s.charAt(r)))
             {
-                if (set.contains(chrArr[i]))
-                {
-                    result = chrArr[i];
-
-                } else
-                {
-                    set.add(chrArr[i]);
-                }
+                set.remove(s.charAt(l));
+                l++;
             }
-
-
+            set.add(s.charAt(r));
+            maxlen = Math.max(maxlen, r - l + 1);
         }
-        return result;
+
+
+        return maxlen;
     }
-
-
-//    public static boolean containsNearbyDuplicate(int[] nums, int k) {
-//        Map<Integer,Integer> map = new HashMap<>();
-//        for(int i = 0;i<nums.length;i++){
-//
-//            if(map.containsKey(nums[i])){
-//                System.out.println(i +" "+ map.get(nums[i]) +" "+k);
-//                if(i- map.get(nums[i]) <= k){
-//
-//                    return true;
-//                }
-//                else{
-//                    map.put(nums[i],i);
-//                }
-//            }
-//            else{
-//                map.put(nums[i],i);
-//            }
-//        }
-//
-//        return false;
-//    }
-
 }
