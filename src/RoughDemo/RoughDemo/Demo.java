@@ -1,38 +1,26 @@
 package RoughDemo.RoughDemo;
 
-
 import java.util.*;
+import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 public class Demo
 {
 
+
     public static void main(String[] args)
     {
-        int[] nums = {0};
-
-        int val = 1;
-        System.out.println(longestSubSeq("   a "));
-        // System.out.println( containsNearbyDuplicate( nums,val));
-        // System.out.println(Arrays.toString(nums));
+        Integer[] arr3 = {10, 31, 6, 1, 2, 2, 3, 4, 4, 5};
+        System.out.println(rearrangeEvenOdd(arr3));
     }
 
-    public static int longestSubSeq(String s)
+    public static List<Integer> rearrangeEvenOdd(Integer[] arr)
     {
-        int maxlen = 0;
-        int l = 0;
-        HashSet<Character> set = new HashSet<>();
-        for (int r = 0; r < s.length(); r++)
-        {
-            while (set.contains(s.charAt(r)))
-            {
-                set.remove(s.charAt(l));
-                l++;
-            }
-            set.add(s.charAt(r));
-            maxlen = Math.max(maxlen, r - l + 1);
-        }
-
-
-        return maxlen;
+        return Arrays.stream(arr)
+                .sorted((a, b) -> Integer.compare(a % 2, b % 2)) // Sort: evens first, then odds
+                .collect(Collectors.toList());
     }
+
+
 }

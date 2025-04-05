@@ -1,16 +1,18 @@
 package StreamsApi;
 
 import java.util.Arrays;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 public class ListToArray {
 
     public static void main(String[] args) {
           List<Integer> list = Arrays.asList(1, 4, 3, 4, 5);
-       // list.sort(Comparator.reverseOrder());  //reverse list
-        //list.sort(Comparator.naturalOrder()); //sort the list
-        //   Collections.sort(list);
-
+//        list.sort(Comparator.reverseOrder());  //reverse list
+//        list.sort(Comparator.naturalOrder()); //sort the list
+//           Collections.sort(list);
+//
         // List<Integer> slist=  list.stream().sorted().collect(Collectors.toList());
 
         

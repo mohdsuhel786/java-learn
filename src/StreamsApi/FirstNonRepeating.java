@@ -23,6 +23,10 @@ public class FirstNonRepeating
 
     public static void main(String[] args)
     {
-        System.out.println(firstNonRepeatingChar("swiss")); // Output: w
+        String word = "swiss";
+        System.out.println(firstNonRepeatingChar(word)); // Output: w
+
+        Character ch = word.chars().mapToObj(e -> (char) e).filter(c -> word.indexOf(c) == word.lastIndexOf(c)).findFirst().orElse(null);
+        System.out.println(ch);
     }
 }
