@@ -17,5 +17,6 @@ public class ReverseArr
         Integer[] arr = {1, 2, 3, 4, 5, 5, 4};
         Object[] revArr = IntStream.range(1, arr.length + 1).mapToObj(e -> arr[arr.length - e]).toArray();
         System.out.println(Arrays.toString(revArr));
+
     }
 }

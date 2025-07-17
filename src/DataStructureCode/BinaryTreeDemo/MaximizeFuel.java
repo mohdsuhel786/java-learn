@@ -51,5 +51,6 @@ public class MaximizeFuel {
         int N = 8; // Change this to your desired fuel capacity
         int maxFuel = getMaxFuelLevel(8, 6, 6);
         System.out.println("Maximum achievable fuel amount: " + maxFuel);
+
     }
 }
