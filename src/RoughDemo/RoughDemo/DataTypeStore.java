@@ -1,6 +1,8 @@
 package RoughDemo.RoughDemo;
 
 import java.util.*;
+import java.util.logging.Logger;
+
 
 public class DataTypeStore
 {
@@ -42,6 +44,7 @@ public class DataTypeStore
             map.get(s).add(s);
 
         }
+
 
 
         System.out.println(map);
