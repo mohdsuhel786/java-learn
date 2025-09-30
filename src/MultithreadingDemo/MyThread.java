@@ -24,6 +24,7 @@ public class MyThread implements Runnable{
         Thread t1 = new Thread(myThread);
         Thread t2 = new MyAnotherThread();
         t1.start();
+
         try{
             Thread.sleep(100);
         }
